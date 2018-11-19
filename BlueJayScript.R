@@ -1,0 +1,7 @@
+>library(spocc)
+>bluejay <- occ(query='Cyanocitta cristata Linnaeus', from='gbif')
+>print(bluejay)
+>View(bluejay)
+>df = as.data.frame(occ2df(bluejay$gbif))
+>library(mapr)
+> map_leaflet(bluejay)
